@@ -1,0 +1,40 @@
+.pps__card {
+  width: 425px;
+  height: 550px;
+  background: rgb(255,225,168);
+background: -moz-linear-gradient(177deg, rgba(255,225,168,1) 0%, rgba(255,255,255,1) 99%);
+background: -webkit-linear-gradient(177deg, rgba(255,225,168,1) 0%, rgba(255,255,255,1) 99%);
+background: linear-gradient(177deg, rgba(255,225,168,1) 0%, rgba(255,255,255,1) 99%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe1a8",endColorstr="#ffffff",GradientType=1);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size:16px;
+    padding: 1rem;
+} 
+.pps__card-title h1{
+    display: flex;
+    justify-content: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    background-color: #666666;
+
+}
+.pps__card-icon{
+    display: flex;
+    justify-content: center;
+}

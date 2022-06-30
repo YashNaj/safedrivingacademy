@@ -1,0 +1,28 @@
+.studentportal{
+    width:100%;
+    height: 100vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: var(--peach);
+}
+.studentportal-title{
+    display: flex;
+    text-align: center;
+    width:100%;
+    justify-content: center;
+    font-size:90px;
+}
+.portalMessage{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding:1rem;
+}
+@media screen and (max-width: 767px) {
+    .studentportal{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

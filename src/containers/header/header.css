@@ -1,0 +1,138 @@
+.sda__header {
+  display: flex;
+  z-index: 1;
+  background: var(--color-footer);
+  width: 100%;
+  align-items: flex-end;
+  position: -webkit-sitcky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.toEnd {
+  display: flex;
+}
+.sda__navbar-links {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  flex: 1;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.sda__navbar-links_logo {
+  display: flex;
+  width: 90px;
+  height: 120px;
+  padding: 0.5rem;
+}
+.sda__navabar-links img {
+  width: 90px;
+  height: 120px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.sda__navbar-links_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 1rem;
+}
+.sda__navbar-links_container p {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--color-footer);
+}
+.sda__navbar-sign {
+  display: flex column;
+  align-self: flex-end;
+}
+.sda__navbar-sign button {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--peach);
+  border: 5px solid var(--peach);
+background-color: #14281d;
+ 
+}
+.sda__navbar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .sda__navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    z-index: 2;
+    position:relative;
+  }
+  .sda__navbar-menu svg{
+    display: flex;
+    align-self: flex-end;
+  }
+  .sda__navbar-sign {
+    display: none;
+  }
+  .sda__navbar-links_container {
+    display: none;
+  }
+  .sda__navbar-menu-container {
+    display: flex column;
+    background: var(--color-footer);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    overflow: show;
+    top: 45px;
+    right: 10px;
+  }
+  .sda__navbar-menu-container-links-sign {
+    justify-content: space-between;
+  }
+  .sda__navbar-menu-container p {
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .sda__navbar-menu-container p:hover {
+    color: var(--color-text);
+  }
+  .sda__navbar-menu-container button {
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: var(--color-subtext);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .sda__navbar-menu-container button:hover {
+    color: var(--color-subtext);
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 375px) {
+}

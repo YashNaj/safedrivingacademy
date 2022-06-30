@@ -1,0 +1,159 @@
+.sda__welcome {
+  display: flex;
+  width: 100%;
+  height:100vh;
+  height: auto;
+}
+.welcome__section{
+  display: flex;
+  width: 100%;
+  height:auto;
+  margin: 2rem 2rem;
+}
+.welcome__header {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.welcome__img {
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+.img-container{
+  display: flex;
+}
+.welcome__img img {
+  display: flex;
+ max-width: 100%; height: 100%; object-fit: contain;
+ padding: 1rem;
+ width: 500px;
+}
+.sda__welcome_header {
+  display: flex;  
+  flex-direction: column;
+  height: auto;
+  flex:2;
+}
+.welcome__heading{
+  font-size: 89px;
+  line-height: 98px;
+  overflow: display;
+  display: flex;
+  align-items: center;
+  stroke: solid white;
+  color: var(--peach);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.welcome__subtext{
+  color: var(--color-text);
+  display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0;
+  display: flex;
+  align-self: flex-start;
+  color: var(--peach);
+  padding: 1rem;
+}
+.welcome__signup {
+  text-align: center;
+  border: 5px solid var(--peach);
+  background-color: #14281d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  align-self: center;
+  color: var(--peach);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2rem 0rem;
+  cursor: pointer;
+}
+.welcome__signup:hover {
+}
+.background-image {
+  background-image: url('../../assets/images/longon_ontario.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 900px;
+  height: 800px;
+  filter: brightness(70%);
+  position: absolute;
+  z-index: -1;
+  display: block;
+  max-width: 100%;
+  border-radius: 500px;
+  overflow: none;
+}
+
+.welcome__signu:active {
+  
+}
+@media  screen and (max-width: 1054px) {
+
+  .welcome__img img{
+    height: 60%;
+    align-self: center;
+  }
+  .welcome__heading{
+    font-size: 60px;
+    line-height: 60px;
+    padding: 1rem;
+    text-align: center;
+  } .welcome__subtext{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .welcome__signup {
+    font-size: 18px
+
+  }
+  .background-image {
+    width: 500px;
+    height: 600px;
+    background-position: center;
+    align-self: flex-start;
+    border-radius: 400px;
+  }
+
+
+}
+@media  screen and (max-width: 768px) {
+
+  .welcome__section{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .welcome__heading{
+    font-size: 50px;
+    line-height: 55px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .welcome__subtext{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .welcome__signup {
+    font-size: 18px;
+  }  
+
+}
+@media screen and (max-width: 454px) {
+  .background-image {
+    width: 375px;
+    height: 400px;
+  }
+  
+}
