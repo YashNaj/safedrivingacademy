@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,500");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,11 +7,16 @@
   scroll-behavior: smooth;
   font-family: var(--font-family);
 }
+
+
 body {
   background: var(--color-footer);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#355834",endColorstr="#ffffff",GradientType=1);
     z-index: 1;
     margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+
+
 }
 a {
   color: unset;
@@ -24,6 +31,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  
 }
 .section__padding {
   padding: 4rem 6rem;
