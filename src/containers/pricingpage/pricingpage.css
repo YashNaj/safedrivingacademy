@@ -1,7 +1,7 @@
 .sda__price {
   display: flex column;
   width: 100%;
-  margin: 4rem 0rem;
+  margin: 4rem 2rem;
   height: auto;
 }
 .sda__price-container {
@@ -196,9 +196,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .sda__price{
+    margin: 0;
+  }
   .sda__price-container {
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
   .package-grid-a {
     display: flex column;

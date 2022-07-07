@@ -132,7 +132,16 @@ background-color: #14281d;
     color: var(--color-subtext);
   }
 }
-@media screen and (max-width: 768px) {
-}
 @media screen and (max-width: 375px) {
+  .sda__navbar-links_logo {
+    display: flex;
+    width: 60px;
+    height: 80px;
+    padding: 0.5rem;
+  }
+  .sda__navabar-links img {
+    width: 60px;
+    height: 80px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 }

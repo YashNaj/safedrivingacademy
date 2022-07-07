@@ -7,7 +7,7 @@ const Studentportal = () => {
       <div className="studentportal-container">
               <h1 className="studentportal-title">Student Portal</h1>
               <div className="construct-svg">
-                  <img src={construction}/>
+                  <svg src={construction}/>
               </div>
         <div className="portalMessage">Whoops! we Are under construction!</div>
       </div>

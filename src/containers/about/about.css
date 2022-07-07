@@ -79,6 +79,7 @@ background-size:contain;
     }
     .about{
         margin:0;
+        height: fit-content;
     }
     .profile-description{
         font-size: 14px;

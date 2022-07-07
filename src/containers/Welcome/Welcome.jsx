@@ -2,6 +2,7 @@ import "./welcome.css";
 import React from "react";
 import logo from "../../assets/images/sfd_logo.png";
 import cityScape from "../../assets/images/header background.png";
+import Header from "../header/Header";
 const Welcome = () => {
   return (
     <div className="sda__welcome">
@@ -22,10 +23,10 @@ const Welcome = () => {
           </buttom>
         </div>
         <div className="welcome__img">
-          <div className="background-image"/>
+          <div className="background-image" />
           <div className="img-container">
             <img alt="logo" src={logo} />
-            </div>
+          </div>
         </div>
       </div>
     </div>
