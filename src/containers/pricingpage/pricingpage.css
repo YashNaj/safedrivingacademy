@@ -5,6 +5,7 @@
   justify-content: center;
   color: var(--peach);
   width: 100%;
+  -webkit-font-weight: 900;
   font-weight: 900;
 }
 .pricing-page-container {
@@ -251,7 +252,7 @@
     font-size: 30px;
   }
 }
-@media screen and (max-width: 454px) {
+@media screen and (max-width: 490px) {
   .pricing-page-price_display-container {
     width: 350px;
     height: auto;
