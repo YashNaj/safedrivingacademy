@@ -254,7 +254,7 @@
 }
 @media screen and (max-width: 768px) {
   .pricing-page-price_display-container {
-    width: 350px;
+    width: 100vw;
     height: auto;
   }
   .price-card-a-container {
@@ -351,6 +351,6 @@
     height: 400px;
   }
   .card3 {
-    height: 350px;
+    height: auto;
   }
 }
