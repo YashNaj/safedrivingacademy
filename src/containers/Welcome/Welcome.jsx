@@ -1,31 +1,36 @@
 import "./welcome.css";
 import React from "react";
 import logo from "../../assets/images/sfd_logo.png";
-import cityScape from "../../assets/images/header background.png";
-import Header from "../header/Header";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';// <-- import styles to be used
+
 const Welcome = () => {
   return (
     <div className="sda__welcome">
+
       <div className="welcome__section ">
         <div className="welcome__header">
           <h1 className="welcome__heading">
             Never Settle when it comes to safety.
           </h1>
           <p className="welcome__subtext">
-            lorem Ipsum is just one of the most important words. Lorem Ipsum has
-            been around for lorem Ipsum to be considered one of the most
-            important words. Lorem Ipsum has been around for lpre Ipsum to be
-            considered one of the most important words. Lorem Ipsum has been
-            around for Lore
+            Personalized drivers lessons for all ages. Serving the greater London, ON area and beyond, put your trust
+            in Safe Driving Acadmey to guide you through the process of getting licensed!
           </p>
-          <buttom type="submit" className="welcome__signup">
-            Sign Up!
-          </buttom>
+          <div className="welcome-buttons">
+            <button type="submit" className="welcome__signup">
+              Sign Up!
+            </button>
+            <button type="submit" className="welcome__sign-in">
+              Sign In
+            </button>
+          </div>
         </div>
         <div className="welcome__img">
-          <div className="background-image" />
-          <div className="img-container">
-            <img alt="logo" src={logo} />
+        <div className = 'background-image'></div>
+
+          <div className="welcome__img">
+            <img src={logo} alt="logo" />
           </div>
         </div>
       </div>

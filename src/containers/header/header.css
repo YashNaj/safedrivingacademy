@@ -52,24 +52,9 @@ a:hover {
   display: flex column;
   align-self: flex-end;
 }
-.sda__navbar-sign button {
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  color: var(--peach);
-  border: 5px solid var(--peach);
-background-color: #14281d;
- 
-}
 .sda__navbar-menu {
   display: none;
 }
-
 @media screen and (max-width: 1050px) {
   .sda__navbar-menu {
     display: flex;
@@ -82,8 +67,12 @@ background-color: #14281d;
   .sda__navbar-menu svg{
     display: flex;
     align-self: flex-end;
+    color: var(--peach);
   }
   .sda__navbar-sign {
+    display: none;
+  }
+  .sda__navbar-sign-in{
     display: none;
   }
   .sda__navbar-links_container {
@@ -130,6 +119,11 @@ background-color: #14281d;
   }
   .sda__navbar-menu-container button:hover {
     color: var(--color-subtext);
+  }
+}
+@media screen and (max-width: 1054px) {
+  .toEnd.welcome__sign-in, .toEnd.welcome__signup{
+    display:none;
   }
 }
 @media screen and (max-width: 375px) {

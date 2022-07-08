@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import { Header, Footer, Welcome, PricePage, About } from "./containers";
+import { Header, Footer, Welcome, PricePage } from "./containers";
 import { Cta, Card } from "./components";
 import Contact from "./containers/contact/Contact";
 import Studentportal from "./containers/studentportal/Studentportal";
+import Testimonial from "./containers/Testimonials/Testimonial";
 
 const App = () => {
   return (
@@ -11,10 +12,10 @@ const App = () => {
       <div className="gradient_bg">
         <Header />
         <Welcome />
-        <About />
         <PricePage />
+        <Testimonial />
         <Contact />
-        <Studentportal/>
+        <Studentportal />
         <Footer />
       </div>
     </div>

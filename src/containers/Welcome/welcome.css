@@ -1,42 +1,42 @@
 .sda__welcome {
   display: flex;
   width: 100%;
-  height:100vh;
-  height: auto;
+  height: 100vh;
 }
-.welcome__section{
+.welcome__section {
   display: flex;
   width: 100%;
-  height:auto;
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
 }
 .welcome__header {
   display: flex;
   flex-direction: column;
-  flex:1;
+  flex: 1;
   justify-content: space-around;
   padding: 1rem;
 }
 .welcome__img {
   display: flex;
-  flex:1;
+  flex: 1;
   justify-content: center;
 }
-.img-container{
+.img-container {
   display: flex;
 }
 .welcome__img img {
- max-width: 100%; height: 100%; object-fit: contain;
- padding: 1rem;
- width: 500px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  width: 500px;
 }
 .sda__welcome_header {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   height: auto;
-  flex:2;
+  flex: 2;
 }
-.welcome__heading{
+.welcome__heading {
   font-size: 89px;
   line-height: 98px;
   overflow: display;
@@ -47,7 +47,7 @@
   border-radius: 10px;
   padding: 1rem;
 }
-.welcome__subtext{
+.welcome__subtext {
   color: var(--color-text);
   display: flex;
   font-size: 18px;
@@ -61,101 +61,125 @@
 .welcome__signup {
   text-align: center;
   border: 5px solid var(--peach);
-  background-color: #14281d;
+  background-color: #204531;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   border-radius: 12px;
-  width: auto;
-  height: auto;
   align-self: center;
   color: var(--peach);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
-  margin: 2rem 0rem;
+  margin: 2rem 1rem;
   cursor: pointer;
+  width: 130px;
+  height: 75px;
+  outline: none;
+}
+.welcome__sign-in {
+  text-align: center;
+  border: 5px solid var(--peach);
+  background-color: #0f44a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  align-self: center;
+  color: var(--peach);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 2rem 1rem;
+  cursor: pointer;
+  width: 130px;
+  outline: none;
+  height: 75px;
+}
+.welcome-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 .welcome__signup:hover {
 }
 .background-image {
-  background-image: url('../../assets/images/longon_ontario.png');
+  background-image: url("../../assets/images/longon_ontario.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 900px;
-  height:1000px;
-  filter: brightness(70%);
+  background-position: center 90px;
   position: absolute;
   z-index: -1;
   display: block;
   max-width: 100%;
-  border-radius: 500px;
-  overflow: none;    height: 0;
-    padding-top: 66.64%; /* (img-height / img-width * container-width) */
-                /* (853 / 1280 * 100) */
-
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+  overflow: visible;
 }
-
-.welcome__signu:active {
-  
+.welcome__signup:active {
 }
-@media  screen and (max-width: 1054px) {
-
-  .welcome__img img{
+@media screen and (max-width: 1054px) {
+  .sda__welcome{
+    height: auto;
+  }
+  .welcome__img img {
     height: 60%;
     align-self: center;
   }
-  .welcome__heading{
+  .welcome__heading {
     font-size: 60px;
     line-height: 60px;
     padding: 1rem;
     text-align: center;
-  } .welcome__subtext{
+  }
+  .welcome__subtext {
     font-size: 12px;
     line-height: 20px;
     text-align: center;
   }
   .welcome__signup {
-    font-size: 18px
-
+    font-size: 18px;
+  }
+  .welcome__sign-in {
+    font-size: 18px;
   }
   .background-image {
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     background-position: center;
     align-self: flex-start;
-    border-radius: 400px;
+    border-radius: 40%;
+    overflow: hidden;
+    display: flex;
+    margin-right: 0.5rem;
   }
-
-
 }
-@media  screen and (max-width: 768px) {
-
-  .welcome__section{
+@media screen and (max-width: 768px) {
+  .welcome__section {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
-  .welcome__heading{
+  .welcome__heading {
     font-size: 50px;
     line-height: 55px;
     padding: 1rem;
     text-align: center;
   }
-  .welcome__subtext{
+  .welcome__subtext {
     font-size: 12px;
     line-height: 18px;
     text-align: center;
   }
   .welcome__signup {
     font-size: 18px;
-  }  
-
+  }
 }
 @media screen and (max-width: 454px) {
   .background-image {
     width: 375px;
     height: 400px;
   }
-  
 }
