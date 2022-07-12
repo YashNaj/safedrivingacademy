@@ -7,7 +7,7 @@ import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import
 const Welcome = () => {
   return (
     <div className="sda__welcome">
-
+        <div className= "background-image"></div>
       <div className="welcome__section ">
         <div className="welcome__header">
           <h1 className="welcome__heading">
@@ -27,8 +27,6 @@ const Welcome = () => {
           </div>
         </div>
         <div className="welcome__img">
-        <div className = 'background-image'></div>
-
           <div className="welcome__img">
             <img src={logo} alt="logo" />
           </div>

@@ -43,12 +43,14 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-display-grid__student-portal-container">
+            <div className="contact-display-grid__student-portal">
             <h1 className = "student-portal-heading">
               Student Portal</h1>
             <div className='portal-button-container'>
-              <button type='submit' className="grid-button">\
-                Sign In!
-              </button> 
+              <button type='submit' className="grid-button">
+                Sign In
+              </button>
+            </div>
             </div>
           </div>
         </div>

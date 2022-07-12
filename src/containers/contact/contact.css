@@ -4,6 +4,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  color: var(--peach);
 }
 .contact-card {
   display: flex column;
@@ -14,6 +15,7 @@
   height: 100%;
   width: 100%;
   border-radius: 40px;
+  margin: 4rem 2rem;
 }
 .contact-display-grid {
   width: 100%;
@@ -22,30 +24,29 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 40px;
   grid-row-gap: 10px;
   border-radius: 40px;
+  margin: 4rem 2rem;
 }
 
 .contact-display-grid-picture-container {
   grid-area: 1 / 1 / 5 / 3;
-  margin: 1rem 1.5rem;
   border-radius: 40px;
 
 }
 .contact-display-grid__contact-container {
   grid-area: 1 / 3 / 3 / 5;
-  background: black;
-  margin: 1rem 1.5rem;
   border-radius: 40px;
   justify-content:center ;
   align-items: center;
+  background: rgba(97, 9, 9, 0.382);
 }
 .contact-display-grid__student-portal-container {
   grid-area: 3 / 3 / 5 / 5;
-  background: black;
-  margin: 1rem 1.5rem;
   border-radius: 40px;
+  background: rgba(97, 9, 9, 0.382);
+
 }
 .contact-display-grid-picture{
     display: flex;
@@ -59,7 +60,6 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background: blue;
   border-radius: 40px;
   justify-content: space-around;
   align-items: center;
@@ -70,7 +70,18 @@
   justify-content: center;
   align-items: ce;
   height: 100%;
-  background: RED;
+}
+.contact-display-grid__student-portal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-display-grid__student-portal *{
+  display:flex;
 }
 .contact-picture {
   max-width: 100%;
@@ -113,11 +124,31 @@
 }
 .contact-display-grid__contact-heading{
   font-size:60px;
+  font-weight: 900;
 }
 
 .portal-button-container{
   display: flex;
   flex: .8;
+  align-items: center;
+}
+.student-portal-heading{
+  font-size:60px;
+  font-weight: 900;
+}
+.grid-button{
+  width: 200px;
+  height: 100px;
+  justify-content:center; 
+  align-items:center;
+  outline: none;
+  border-radius: 40px;
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: none; 
+  background-color: rgb(63, 63, 232);
+  border: 5px solid var(--peach);
+  color: var(--peach)
 }
 .contact-display-grid__contact-heading{
     display: flex;
@@ -135,6 +166,36 @@
 .contact-title{
     display:flex;
 }
+.contact-block-container{
+  display: flex;
+  justify-content: center;
+  margin: 0rem 1rem;
+}
 .contact-buttons{
-  display: flex column;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+  align-items: center;
+  width: 50px;
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .contact-display-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    margin: .5rem 1rem;
+    }
+    
+    .contact-display-grid-picture-container { grid-area: 1 / 1 / 2 / 3; }
+    .contact-display-grid__contact-container { grid-area: 2 / 1 / 3 / 3; }
+    .contact-display-grid__student-portal-container{ grid-area: 3 / 1 / 4 / 3; }
+    .contact-display-grid-picture h1{
+      font-size:50px;
+    }
 }

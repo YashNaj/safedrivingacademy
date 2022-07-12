@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   height: 100vh;
+  position: relative;
+  font-weight: 900;
 }
 .welcome__section {
   display: flex;
@@ -70,11 +72,12 @@
   color: var(--peach);
   font-size: 22px;
   font-weight: bold;
-  margin: 2rem 1rem;
   cursor: pointer;
   width: 130px;
   height: 75px;
   outline: none;
+  margin-bottom: 1rem;
+
 }
 .welcome__sign-in {
   text-align: center;
@@ -88,35 +91,33 @@
   color: var(--peach);
   font-size: 22px;
   font-weight: bold;
-  margin: 2rem 1rem;
   cursor: pointer;
   width: 130px;
   outline: none;
   height: 75px;
+
 }
 .welcome-buttons {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
+  flex-direction: column;
+  margin: 4rem 0rem;
 }
 .welcome__signup:hover {
 }
 .background-image {
   background-image: url("../../assets/images/longon_ontario.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 90px;
+  background-size: cover;
+  background-position: center;
   position: absolute;
   z-index: -1;
   display: block;
-  max-width: 100%;
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
   margin-bottom: 4rem;
   overflow: visible;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter:brightness(50%) blur(5px);
 }
 .welcome__signup:active {
 }
@@ -146,14 +147,10 @@
     font-size: 18px;
   }
   .background-image {
-    width: 400px;
-    height: 500px;
+    height: 100vh;
+
     background-position: center;
     align-self: flex-start;
-    border-radius: 40%;
-    overflow: hidden;
-    display: flex;
-    margin-right: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -176,10 +173,11 @@
   .welcome__signup {
     font-size: 18px;
   }
-}
-@media screen and (max-width: 454px) {
-  .background-image {
-    width: 375px;
-    height: 400px;
+  .welcome__img{
+    display: none;
   }
 }
+@media screen and (max-width: 454px) {
+
+  }
+

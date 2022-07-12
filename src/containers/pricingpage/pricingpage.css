@@ -17,9 +17,11 @@
 .pricing-page-heading {
   display: flex;
   margin: 4rem 0rem;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 900;
   padding: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 .pricing-page-price_display-container {
   display: flex;
