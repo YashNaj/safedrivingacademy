@@ -3,7 +3,7 @@ import "./testimonial.css";
 const Testimonial = () => {
   return (
     <div className="testimonial " id="testimonial">
-      <div className="testimonial-container">
+      <div className="testimonial-page-container">
         <h1 className="testimonial-title">See what our customes are saying</h1>
         <div className="testimonial-display">
           <div className="testimonial-container">

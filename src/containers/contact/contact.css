@@ -1,106 +1,140 @@
-.contact{
+.contact {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card {
+  display: flex column;
+}
+.contact-container {
+  display: flex;
+  margin: 4rem 2rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+.contact-display-grid {
+  width: 100%;
+  height: 77%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border-radius: 40px;
+}
+
+.contact-display-grid-picture-container {
+  grid-area: 1 / 1 / 5 / 3;
+  margin: 1rem 1.5rem;
+  border-radius: 40px;
+
+}
+.contact-display-grid__contact-container {
+  grid-area: 1 / 3 / 3 / 5;
+  background: black;
+  margin: 1rem 1.5rem;
+  border-radius: 40px;
+  justify-content:center ;
+  align-items: center;
+}
+.contact-display-grid__student-portal-container {
+  grid-area: 3 / 3 / 5 / 5;
+  background: black;
+  margin: 1rem 1.5rem;
+  border-radius: 40px;
+}
+.contact-display-grid-picture{
     display: flex;
-    width: 100%;
-    height:100vh;
-    justify-content: center;
-    align-items: center;
-}
-.contact-container{
-    display:flex;
-    margin: 4rem 2rem;
-    background:rgba(79, 66, 66, 0.24);
+    width:100%;
+    height: 100%;
     border-radius: 40px;
-    padding: 1rem;
+    position: relative;
 }
-.contact-card-heading{
-    text-align: center;
-    font-size: 89px; 
-    color:var(--peach);
+.contact-display-grid__contact{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: blue;
+  border-radius: 40px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
-.contact-card-display{
-    display: flex column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.contact-display-grid__student-portal-container{
+  display: flex column;
+  justify-content: center;
+  align-items: ce;
+  height: 100%;
+  background: RED;
+}
+.contact-picture {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+.background-image2{
+    background: url('../../assets/images/dad.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    border-radius:40px;
+    filter:blur(3px);
+    filter: brightness(70%);
+}
+.contact-display-card-heading{
+    display: flex;
+    height: 100%;
+    width:100%;
+}
+.contact-display-grid-picture h1{
+    display:flex;
+    align-self: flex-start;
+    font-size: 200px;
+    width:400px;
+    margin: 1rem;
+    font-weight: 900;
+    color: rgb(242, 233, 166);
+}
+.contact-block-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+.contact-display-grid__contact-heading{
+  font-size:60px;
+}
+
+.portal-button-container{
+  display: flex;
+  flex: .8;
+}
+.contact-display-grid__contact-heading{
+    display: flex;
 }
 .contact-section{
-    display:flex;
-    width: 100%;
-    color:var(--peach);
+    display: flex column;
+
 }
 .contact-section-content{
-    display:flex;
-    font-size:40px;
-    width: 100%;
-    margin: 3rem;
-}
-.contact-title{
     display: flex;
-    margin-right: 2rem;
-    width:120px;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    color: lightgreen
 }
 .contact-icon{
     display: flex;
-    font-size:60px;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
 }
-.contact-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;}
-.contact-section a:hover{
-    color:black;
+.contact-title{
+    display:flex;
 }
-
-@media screen and (max-width : 768px) {
-    .contact{
-        display: flex column;
-        width: 100%;
-        height:100vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact-card-heading{
-        text-align: center;
-        font-size: 30px; 
-        color:var(--peach);
-    }
-    .contact-section{
-        flex-direction: column;
-    }
-    .contact-section-content{
-        flex-direction: column;
-    }
-    .contact-section-content{
-        display:flex column;
-        font-size:20px;
-        margin:0;
-    }
-    .contact-icon{
-        display: flex;
-        font-size:40px;
-        margin:0;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
-    .contact-title{
-        margin:0;
-        width: auto;
-    }
-    .contact-container{
-        display:flex column;
-        margin: 4rem 2rem;
-        background:rgba(102, 7, 7, 0.763);
-        border-radius: 40px;
-        width:90%;
-        justify-content: center;
-    }
+.contact-buttons{
+  display: flex column;
 }

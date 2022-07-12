@@ -10,7 +10,7 @@
 }
 .pricing-page-container {
   display: flex column;
-  margin: 2rem 4rem;
+  margin: 4rem 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -24,7 +24,6 @@
 .pricing-page-price_display-container {
   display: flex;
   justify-content: center;
-  width: 1050px;
   margin: 0 auto;
 }
 .pricing-page-price_display {
