@@ -198,4 +198,27 @@
     .contact-display-grid-picture h1{
       font-size:50px;
     }
+    .student-portal-heading{
+      font-size: 20px;
+    }
+    .contact-display-grid__contact-heading{
+      font-size: 20px;
+    }
+    .contact-buttons{
+      font-size: 12px;
+    }
+    .grid-button{
+      width: 120px;
+      height: 60px;
+      justify-content:center; 
+      align-items:center;
+      outline: none;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 900;
+      text-decoration: none; 
+      background-color: rgb(63, 63, 232);
+      border: 5px solid var(--peach);
+      color: var(--peach)
+    }
 }

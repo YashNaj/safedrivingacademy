@@ -128,7 +128,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 1054px) {
-  .toEnd.welcome__sign-in, .toEnd.welcome__signup{
+  .toEnd{
     display:none;
   }
 }

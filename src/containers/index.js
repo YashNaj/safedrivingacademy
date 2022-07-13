@@ -1,3 +1,4 @@
+import PriceSlide from "./sliders/PriceSlide";
 import Testimonial from "./Testimonials/Testimonial";
 
 export { default as Welcome } from "./Welcome/Welcome";

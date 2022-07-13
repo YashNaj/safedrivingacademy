@@ -1,3 +1,2 @@
-export { default as Cta } from './cta/Cta';
-export { default as Card } from './card/Card';
-
+export { default as SdaSwiper } from './swiper/Swiper'; 
+export { default as Reviews } from './reviewswiper/Reviews';
