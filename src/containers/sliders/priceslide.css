@@ -1,0 +1,25 @@
+.price-slide{ 
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 100vw;
+
+    align-items: center;
+    background: rgb(154, 31, 31);;
+}
+.price-carousel{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 1rem 0rem;
+}
+.price-slide-heading{
+    display: flex;
+    font-weight: 900px;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--peach);
+    font-weight: 900;
+    background:rgb(126, 3, 3);
+}
