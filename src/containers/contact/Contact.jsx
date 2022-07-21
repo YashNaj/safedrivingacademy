@@ -8,14 +8,14 @@ import contactPicture from "../../assets/images/dad.png";
 import React from "react";
 import "./contact.css";
 const Contact = () => {
-  const ContactBrick = ({ title, icon, link }) => {
+  const ContactBrick = ({ title, faIcon, link }) => {
     return (
       <div className="contact-section">
         <div className="contact-section-content">
           <a className = "contact-buttons" href={link} >
-            <FontAwesomeIcon icon={icon} />
               {title}
           </a>
+          <FontAwesomeIcon class = "contact-icons" icon  = {faIcon}/>
         </div>
       </div>
     );
@@ -36,9 +36,9 @@ const Contact = () => {
                 Contact Us!
               </h1>
               <div className="contact-block-container">
-                <ContactBrick title="Instagram" icon="'fa-brands fa-instagram'" link="" />
-                <ContactBrick title="Call" icon="'fa-solid fa-phone'" link="" />
-                <ContactBrick title="Mail" icon="'fa-solid fa-envelope'" link="" />
+                <ContactBrick title="Instagram" faIcon="'fa-brands fa-instagram'" link="" />
+                <ContactBrick title="Call" faIcon="fa-solid fa-phone" link="" />
+                <ContactBrick title="Mail" faIcon="fa-solid fa-envelope" link="" />
               </div>
             </div>
           </div>

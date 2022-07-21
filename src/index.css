@@ -12,7 +12,19 @@
  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#41521f",GradientType=1);
 --color-blog: #7c6a0aff;
 --color-bg: #6B7D7D;
---color-footer: #9C3030;
+--color-footer: linear-gradient(
+  180deg,
+  hsl(0deg 58% 41%) 15%,
+  hsl(358deg 67% 36%) 58%,
+  hsl(355deg 81% 30%) 74%,
+  hsl(352deg 100% 25%) 84%,
+  hsl(357deg 100% 22%) 91%,
+  hsl(0deg 100% 20%) 96%,
+  hsl(0deg 100% 18%) 99%,
+  hsl(0deg 100% 16%) 101%,
+  hsl(0deg 100% 14%) 102%,
+  hsl(0deg 0% 0%) 100%
+);
 --color-text: #011638;
 --color-subtext: #0D1321;
 --auburn: #9c3030;

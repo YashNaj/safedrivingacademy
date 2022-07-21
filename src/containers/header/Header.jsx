@@ -10,6 +10,11 @@ import {
 } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 const Header = () => {
+  var f = document.getElementById('sign-container');
+  function exitOut() {
+    setToggleMenu(false);
+    f.style.transform = 'translateY(' + -40 + 'px)';
+  }
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => (
     <>
@@ -40,40 +45,45 @@ const Header = () => {
           <div className="sda__navbar-links_container">
             <Menu />
           </div>
-          <button className="welcome__signup desktop" type="submit">
-            Sign Up!
-          </button>
-          <button className="welcome__sign-in desktop" type="submit">
-            Sign in
-          </button>
+          <div className="welcome-header-buttons">
+            <button className="welcome__signup desktop" type="submit">
+              Sign Up!
+            </button>
+            <button className="welcome__sign-in desktop" type="submit">
+              Sign in
+            </button>
+          </div>
           <FontAwesomeIcon icon="solid fa-cart-shopping" />
         </div>
+
         <div className="sda__navbar-menu">
           {toggleMenu ? (
             <RiCloseLine
               color="peach"
               size={40}
-              onClick={() => setToggleMenu(false)}
+              onClick={() => exitOut()}
             />
           ) : (
             <RiMenu3Line
-              color="peach"
-              size={40}
-              onClick={() => setToggleMenu(true)}
+                color="peach"
+                size={40}
+                onClick={() => setToggleMenu(true)}
             />
           )}
           {toggleMenu && (
-            <div className="sda__navbar-menu-container scale-up-center">
-              <div className="sda__navbar-menu-container-links scale-up-center">
+            <div className="sda__navbar-menu-container slide-in-right animate">
+              <div className="sda__navbar-menu-container-links slide-in-right animate">
                 <Menu />
               </div>
-              <div className="sda__navbar-menu-sign-container">
-                <div className="sda__navbar-menu-container-links-sign header__signup">
-                  <button type="button">Sign Up</button>
+              <div className="sda__navbar-menu-sign-container" id = "sign-container">
+                <div className="sda__navbar-menu-container-links-sign header__signup" id = "sign-container2">
+                  <button className="signup_button-mobile" type="button">
+                    Sign Up!
+                  </button>
                 </div>
-                <div className="header__signin">
-                  <button type="button">Sign In</button>
-                </div>
+                <button className="signin_button-mobile" type="button">
+                  Sign In
+                </button>
               </div>
             </div>
           )}
